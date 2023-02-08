@@ -1,9 +1,8 @@
 import axios from "axios";
-// process.env.REACT_APP_KEY
+
 const URL = "https://api.openweathermap.org/data/2.5/weather";
 
 export const fetchWeather = async (find) => {
-  console.log("hi", process.env.REACT_APP_KEY);
   const { data } = await axios.get(URL, {
     params: {
       q: find,
@@ -14,6 +13,6 @@ export const fetchWeather = async (find) => {
       AppID: process.env.REACT_APP_KEY,
     },
   });
-  console.log(data);
+
   return data;
 };
