@@ -1,16 +1,12 @@
 import axios from "axios";
-
+// process.env.REACT_APP_KEY
 const URL = "https://api.openweathermap.org/data/2.5/weather";
 
-
-
-export const fetchWeather = async (query) => {
- 
-
-  console.log(process.env.REACT_APP_KEY);
+export const fetchWeather = async (find) => {
+  console.log("hi", process.env.REACT_APP_KEY);
   const { data } = await axios.get(URL, {
     params: {
-      q: query,
+      q: find,
       units: "matric",
       lat: 40.863372,
       lon: -74.113181,
@@ -18,6 +14,6 @@ export const fetchWeather = async (query) => {
       AppID: process.env.REACT_APP_KEY,
     },
   });
-
+  console.log(data);
   return data;
 };

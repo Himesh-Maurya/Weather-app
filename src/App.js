@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { fetchWeather } from "./fetchWeather";
+import { fetchWeather } from "./fetchWeatherapi.js";
 
 import "./App.css";
 

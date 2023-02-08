@@ -2,16 +2,13 @@
   box-sizing: border-box;
 }
 .main {
-  background: linear-gradient(
-    rgba(77, 202, 192, 0.418),
-    rgba(209, 46, 125, 0.418)
-  );
-  /* background-size: cover;
-  background-position: center; */
+  background-color: rebeccapurple;
+  background-size: cover;
+  background-position: center;
 }
 
 .main {
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,12 +16,13 @@
 }
 
 .search {
+  margin-bottom: 6%;
   outline: none;
-  padding: 20px 7%;
+  padding: 18px 6%;
   border-radius: 20px;
   border: none;
-  margin-bottom: 5%;
-  background: rgba(250, 250, 250, 0.85);
+
+  background: rgba(244, 239, 239, 0.75);
 }
 
 .city {
